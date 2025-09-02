@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Smart Garden – Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Monitoramento IoT</h1>
+    <div id="statusBar">
+      <span id="connDot" class="dot"></span>
+      <span id="connText">Conectando…</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h3>Temperatura</h3>
+        <div class="value"><span id="tempValue">--</span> °C</div>
+        <small id="tempStatus">—</small>
+      </article>
+      <article class="card">
+        <h3>Umidade</h3>
+        <div class="value"><span id="humValue">--</span> %</div>
+        <small id="humStatus">—</small>
+      </article>
+      <article class="card">
+        <h3>Dispositivo</h3>
+        <div class="value" id="deviceOnline">—</div>
+        <small id="lastSeen">—</small>
+      </article>
+    </section>
+
+    <section>
+      <h2>Últimas Leituras</h2>
+      <table id="tbl">
+        <thead><tr><th>Data/Hora</th><th>Temp (°C)</th><th>Umid (%)</th><th>Erro</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <button id="btnExport">Exportar CSV</button>
+    </section>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Smart Garden – Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Monitoramento IoT</h1>
+    <div id="statusBar">
+      <span id="connDot" class="dot"></span>
+      <span id="connText">Conectando…</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h3>Temperatura</h3>
+        <div class="value"><span id="tempValue">--</span> °C</div>
+        <small id="tempStatus">—</small>
+      </article>
+      <article class="card">
+        <h3>Umidade</h3>
+        <div class="value"><span id="humValue">--</span> %</div>
+        <small id="humStatus">—</small>
+      </article>
+      <article class="card">
+        <h3>Dispositivo</h3>
+        <div class="value" id="deviceOnline">—</div>
+        <small id="lastSeen">—</small>
+      </article>
+    </section>
+
+    <section>
+      <h2>Últimas Leituras</h2>
+      <table id="tbl">
+        <thead><tr><th>Data/Hora</th><th>Temp (°C)</th><th>Umid (%)</th><th>Erro</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <button id="btnExport">Exportar CSV</button>
+    </section>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
